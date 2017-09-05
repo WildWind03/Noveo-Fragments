@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:columnCount="2"
+    android:rowCount="2">
+
+    <FrameLayout
+        android:id="@+id/top_left_fragment_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1">
+
+        <fragment
+            android:id="@+id/top_left_fragment"
+            android:name ="com.noveogroup.fragments_lab.fragments.TopFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            tools:layout="@layout/top_fragment_layout" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/top_right_fragment_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1" />
+
+    <FrameLayout
+        android:id="@+id/bottom_left_fragment_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"/>
+
+    <FrameLayout
+        android:id="@+id/bottom_right_fragment_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1">
+    </FrameLayout>
+</GridLayout>
